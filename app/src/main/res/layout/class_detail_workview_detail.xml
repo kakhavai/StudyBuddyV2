@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/listViewLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workName"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/detail_button"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:id="@+id/workCompleted"/>
+
+    <ImageButton
+        android:layout_width="@dimen/detail_button"
+        android:layout_height="@dimen/detail_button"
+        android:id="@+id/setDateAndTime"
+        android:src="@drawable/ic_set_alarm_blue"
+        android:background="?attr/selectableItemBackground"/>
+
+    <ImageButton
+        android:layout_width="@dimen/detail_button"
+        android:layout_height="@dimen/detail_button"
+        android:id="@+id/cancel"
+        android:src="@drawable/ic_cancel_alarm_blue"
+        android:background="?attr/selectableItemBackground"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/detail_button"
+        android:id="@+id/delete"
+        android:src="@drawable/ic_delete_work_blue"
+        android:background="?attr/selectableItemBackground"/>
+
+
+</LinearLayout>

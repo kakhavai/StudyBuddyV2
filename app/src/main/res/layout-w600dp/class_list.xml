@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="@drawable/divider"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="anvenkat.calpoly.edu.studybuddiesv02.ClassListActivity">
+    <!--android:divider="?android:attr/dividerHorizontal"-->
+    <!--
+    This layout is a two-pane layout for the Classes
+    master/detail flow.
+
+    -->
+
+    <!--<RelativeLayout
+        android:layout_width="@dimen/class_list_fragment_size"
+        android:layout_height="match_parent">-->
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/class_list"
+        android:name="anvenkat.calpoly.edu.studybuddiesv02.ClassListFragment"
+        android:layout_width="@dimen/class_list_fragment_600dp"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="anvenkat.calpoly.edu.studybuddiesv02.ClassListActivity"
+        tools:listitem="@layout/class_list_content" />
+
+    <!--<ImageView
+        android:layout_width="@dimen/background_item"
+        android:layout_height="@dimen/background_item"
+        android:src="@drawable/ic_book_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>-->
+
+    <FrameLayout
+        android:id="@+id/class_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>
